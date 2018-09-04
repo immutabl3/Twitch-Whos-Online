@@ -1,0 +1,49 @@
+{
+  "name": "twitch-whos-online",
+  "version": "0.0.1",
+  "description": "see who's online on twitch",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm server",
+    "dev": "nodemon -r esm -r dotenv/config server",
+    "watch": "parcel scripts/index.js styles/index.scss",
+    "build": "parcel build scripts/index.js styles/index.scss",
+    "heroku-postbuild": "npm run build"
+  },
+  "engine": {
+    "node": "10.5.0",
+    "npm": "6.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immutabl3/Twitch-Whos-Online.git"
+  },
+  "author": "Jon Kelley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immutabl3/Twitch-Whos-Online/issues"
+  },
+  "homepage": "https://github.com/immutabl3/Twitch-Whos-Online#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "baobab": "^2.5.2",
+    "baobab-react": "^3.0.0",
+    "bluebird": "^3.5.2",
+    "classnames": "^2.2.6",
+    "compression": "^1.7.3",
+    "dotenv": "^6.0.0",
+    "esm": "^3.0.82",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "helmet": "^3.13.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "parcel": "^1.9.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "signal-js": "^1.0.2",
+    "superagent": "^3.8.3"
+  }
+}
